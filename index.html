@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="images/synergy-symbol.png">
+<title>Synergy Consulting Services</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Synergy Consulting Services — business setup, investment facilitation, procurement and logistics, and Ethiopian specialty coffee export. Addis Ababa, Ethiopia.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600&display=swap">
+<style>
+/* Layout: a calm consultancy profile on one light ground (single theme, by choice) so every logo shows in its real colours, transparent, with no plates; sections on a long two-column grid */
+:root{
+  --bg:#F1F2EE; --surface:#FAFBF8; --ink:#13211C; --muted:#56625C; --line:#D9DDD5;
+  --accent:#A3462B; --accent-ink:#FFFFFF; --aqua:#A3462B; --deep:#13211C; --deep-ink:#E9ECE6; --deep-muted:#9AA79F; --deep-aqua:#E39A78;
+  --plate:#FFFFFF;
+  --f:"Readex Pro", "Geeza Pro", Tahoma, system-ui, sans-serif;
+}
+.plate{display:flex;align-items:center;justify-content:center}
+.plate img{display:block;max-width:100%;max-height:100%;object-fit:contain}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f);font-weight:300;font-size:16px;line-height:1.75}
+html[lang="ar"] [lang="en"], html[lang="en"] [lang="ar"]{display:none}
+.in{max-width:1080px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-weight:500;line-height:1.3;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:inherit}
+.eyebrow{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--aqua);font-weight:500}
+html[lang="ar"] .eyebrow{letter-spacing:0;font-size:14px}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+.top .in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:500;letter-spacing:.08em}
+.mark{width:34px;height:36px;flex:none}
+nav{display:flex;align-items:center;gap:20px;font-size:14.5px}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.lang{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:5px 12px;border-radius:999px;cursor:pointer}
+.lang:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (max-width:760px){nav .nl{display:none}}
+
+/* hero */
+.hero{background:var(--surface);border-bottom:1px solid var(--line)}
+.hero .in{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:48px;align-items:center;padding-block:72px 80px}
+.hero h1{font-size:clamp(32px,5vw,54px);font-weight:600;line-height:1.25}
+.hero p.lead{margin-top:18px;color:var(--muted);font-size:16px;max-width:46ch}
+.status{margin-top:22px;display:inline-flex;align-items:center;gap:10px;font-size:14.5px;font-weight:500;color:var(--ink);background:var(--bg);border:1px solid var(--line);padding:6px 14px;border-radius:999px}
+.dot{width:8px;height:8px;border-radius:50%;background:#2E8B57;box-shadow:0 0 0 4px color-mix(in srgb,#2E8B57 20%,transparent)}
+.hero .cta{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;text-decoration:none;padding:11px 22px;border-radius:999px;font-weight:500;font-size:15px}
+.btn.p{background:var(--accent);color:var(--accent-ink)}
+.btn.g{border:1px solid var(--line);color:var(--ink)}
+.biglogo{justify-self:center;width:min(100%,280px);aspect-ratio:609/638}
+.partners{display:flex;flex-wrap:wrap;gap:20px 56px;align-items:center}
+.partners figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px}
+.partners .plate{width:170px;height:110px}
+.partners figcaption{font-size:13.5px;color:var(--muted)}
+.tag{margin-top:6px;display:block;color:var(--deep-muted);font-size:14px}
+@media (max-width:760px){.hero .in{grid-template-columns:1fr;padding-block:48px 56px}.biglogo{width:150px;order:-1;justify-self:start}}
+
+section{padding-block:76px}
+section + section{border-top:1px solid var(--line)}
+.head{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:12px 48px;margin-bottom:40px}
+.head h2{font-size:clamp(24px,3vw,32px)}
+.head p{color:var(--muted)}
+@media (max-width:760px){.head{grid-template-columns:1fr}}
+
+/* about */
+.mvv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.mvv div{display:flex;flex-direction:column;gap:8px}
+.mvv h3{font-size:17px}
+.mvv p{color:var(--muted);font-size:15px}
+@media (max-width:760px){.mvv{grid-template-columns:1fr}}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.svc article{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:28px;display:flex;flex-direction:column;gap:10px}
+.svc h3{font-size:19px}
+.svc p{color:var(--muted);font-size:15px}
+.origins{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.origins span{font-size:13px;border:1px solid var(--line);padding:2px 10px;border-radius:999px}
+@media (max-width:760px){.svc{grid-template-columns:1fr}}
+
+/* engagement */
+.case{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.case .client{display:flex;align-items:center;gap:16px;margin-bottom:14px}
+.case .client i{display:block;width:96px;height:53px;background:var(--ink);-webkit-mask:var(--kuwait) center/contain no-repeat;mask:var(--kuwait) center/contain no-repeat}
+.case ul{margin:16px 0 0;padding-inline-start:18px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+.figs{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--line)}
+.fig{display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.fig b{font-size:clamp(30px,4vw,42px);font-weight:400;color:var(--aqua);font-variant-numeric:tabular-nums;min-width:4.2ch;direction:ltr;text-align:start}
+.fig span{color:var(--muted)}
+@media (max-width:760px){.case{grid-template-columns:1fr}}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:28px 40px}
+.why div{display:flex;flex-direction:column;gap:6px;padding-top:16px;border-top:2px solid var(--ink)}
+.why h3{font-size:17px}
+.why p{color:var(--muted);font-size:15px}
+
+/* projects */
+.proj{display:grid;grid-template-columns:auto minmax(0,1fr);gap:28px;align-items:center;background:var(--surface);border:1px solid var(--line);padding:28px}
+.proj .plate{width:180px;height:80px}
+.proj p{color:var(--muted)}
+@media (max-width:620px){.proj{grid-template-columns:1fr}}
+
+/* voices */
+.voices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.voices blockquote{margin:0;display:flex;flex-direction:column;gap:12px;font-size:18px;font-weight:300}
+.voices cite{font-style:normal;font-size:14px;color:var(--muted)}
+@media (max-width:760px){.voices{grid-template-columns:1fr}}
+
+/* founder */
+.founder{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px}
+.founder h3{font-size:24px;font-weight:400}
+.founder p{color:var(--muted);max-width:60ch;margin-top:8px}
+.founder .btn{border:1px solid var(--line);color:var(--ink)}
+
+/* contact */
+.contact{background:var(--deep);color:var(--deep-ink)}
+.contact .head p{color:var(--deep-muted)}
+.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.cgrid div{display:flex;flex-direction:column;gap:4px}
+.cgrid small{color:var(--deep-muted);font-size:13px}
+.cgrid span{font-size:16px;overflow-wrap:anywhere}
+.cgrid .mail{font-size:clamp(20px,3vw,28px);font-weight:500;color:var(--deep-ink);user-select:all}
+.todo{color:var(--deep-aqua)}
+.contact .eyebrow{color:var(--deep-aqua)}
+@media (max-width:760px){.cgrid{grid-template-columns:1fr}}
+footer{background:var(--deep);color:var(--deep-muted);font-size:13.5px;border-top:1px solid color-mix(in srgb,var(--deep-ink) 12%,transparent)}
+footer .in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding-block:22px}
+</style>
+
+</head>
+<body>
+<div style="--kuwait:url(images/kuwait-livestock.png)">
+
+<header class="top"><div class="in">
+  <a class="brand" href="#top"><span class="mark plate" aria-hidden="true"><img src="images/synergy-symbol.png" alt=""></span><span>SYNERGY</span></a>
+  <nav>
+    <a class="nl" href="#about"><span lang="ar">من نحن</span><span lang="en">About</span></a>
+    <a class="nl" href="#services"><span lang="ar">الخدمات</span><span lang="en">Services</span></a>
+    <a class="nl" href="#work"><span lang="ar">أعمالنا</span><span lang="en">Work</span></a>
+    <a class="nl" href="#contact"><span lang="ar">تواصل</span><span lang="en">Contact</span></a>
+    <button class="lang" id="lang" type="button"><span lang="ar">English</span><span lang="en">العربية</span></button>
+  </nav>
+</div></header>
+
+<div class="hero" id="top"><div class="in">
+  <div>
+    <span class="eyebrow"><span lang="ar">أديس أبابا · تأسست 2017</span><span lang="en">Addis Ababa · Founded 2017</span></span>
+    <h1 style="margin-top:14px"><span lang="ar">بوابتك للأعمال والاستثمار في إثيوبيا</span><span lang="en">Your gateway to business and investment in Ethiopia</span></h1>
+    <p class="lead"><span lang="ar">شركة استشارات أعمال واستثمار في أديس أبابا، نساعد المستثمرين على تأسيس أعمالهم وتشغيلها في إثيوبيا.</span><span lang="en">A business and investment consultancy in Addis Ababa, helping investors set up and run their businesses in Ethiopia.</span></p>
+    <p class="status"><span class="dot" aria-hidden="true"></span><span lang="ar">نواصل تقديم خدماتنا عن بُعد للمشاريع الجادة</span><span lang="en">Still serving clients remotely for serious projects</span></p>
+    <div class="cta">
+      <a class="btn p" href="#contact"><span lang="ar">تواصل معنا</span><span lang="en">Get in touch</span></a>
+      <a class="btn g" href="#services"><span lang="ar">خدماتنا</span><span lang="en">Our services</span></a>
+    </div>
+  </div>
+  <div>
+    <div class="biglogo plate"><img src="images/synergy-logo.png" alt="Synergy Consulting Services"></div>
+  </div>
+</div></div>
+
+<section id="about"><div class="in">
+  <div class="head">
+    <div><span class="eyebrow"><span lang="ar">من نحن</span><span lang="en">About</span></span><h2 style="margin-top:8px"><span lang="ar">وضوح في التفكير، ومعرفة بالسوق</span><span lang="en">Clear thinking, local knowledge</span></h2></div>
+    <p><span lang="ar">نجمع بين التحليل الدقيق والبحث الميداني والمعرفة العملية بالسوق الإثيوبي، لنختصر على عملائنا الإجراءات ونقرّب لهم الفرص. وتواصلنا بالعربية والإنجليزية يسدّ فجوة اللغة والثقافة بين المستثمر والجهات المحلية.</span><span lang="en">We combine rigorous analysis, primary research and hands-on knowledge of the Ethiopian market to cut through procedures and bring opportunities closer. Working in both Arabic and English, we close the language and culture gap between investors and local stakeholders.</span></p>
+  </div>
+  <div class="mvv">
+    <div><h3><span lang="ar">رسالتنا</span><span lang="en">Mission</span></h3><p><span lang="ar">نختصر على عملائنا تعقيدات إطلاق الأعمال بنموذج عمل سريع ومنضبط في مواعيده، ونبني معهم علاقات طويلة قائمة على المسؤولية والمساءلة.</span><span lang="en">To take the bureaucracy out of launching a business, with a fast, punctual way of working, and to build lasting client relationships grounded in responsibility and accountability.</span></p></div>
+    <div><h3><span lang="ar">رؤيتنا</span><span lang="en">Vision</span></h3><p><span lang="ar">أن نكون الشريك الاستشاري الأول في القرن الأفريقي، نجمع الموارد والفرص والكفاءات ونوصلها لعملائنا حول العالم.</span><span lang="en">To be the leading consulting partner in the Horn of Africa, bringing resources, opportunities and talent to clients around the world.</span></p></div>
+    <div><h3><span lang="ar">قيمنا</span><span lang="en">Values</span></h3><p><span lang="ar">الشفافية والصراحة مع العميل، والتزام لا يتنازل عن الجودة والدقة في المواعيد والنزاهة واحترام الأنظمة.</span><span lang="en">Transparency and candor with every client, and an uncompromising commitment to quality, punctuality, integrity and the law.</span></p></div>
+  </div>
+</div></section>
+
+<section id="services"><div class="in">
+  <div class="head">
+    <div><span class="eyebrow"><span lang="ar">الخدمات</span><span lang="en">Services</span></span><h2 style="margin-top:8px"><span lang="ar">من الفكرة إلى التشغيل</span><span lang="en">From idea to operation</span></h2></div>
+    <p><span lang="ar">نرافق المستثمر في كل مرحلة، ونتولى التفاصيل اللي تأخذ وقته وجهده على الأرض.</span><span lang="en">We stay with investors at every stage and handle the on-the-ground details that cost them time and effort.</span></p>
+  </div>
+  <div class="svc">
+    <article><h3><span lang="ar">تأسيس الأعمال وتسهيل الاستثمار</span><span lang="en">Business setup & investment facilitation</span></h3><p><span lang="ar">تأسيس الشركات والمشاريع، واستخراج التراخيص، وإرشاد المستثمر في الإجراءات والأنظمة، وإدارة المشروع في مرحلة الإطلاق.</span><span lang="en">Company and project formation, licensing, guidance through procedures and regulations, and project management through launch.</span></p></article>
+    <article><h3><span lang="ar">المشتريات والاستيراد والخدمات اللوجستية</span><span lang="en">Procurement, imports & logistics</span></h3><p><span lang="ar">تنسيق شراء المعدات والمواد واستيرادها وشحنها وتخليصها حتى تصل للموقع.</span><span lang="en">Coordinating the purchase, import, shipping and clearance of equipment and materials, all the way to site.</span></p></article>
+    <article><h3><span lang="ar">التنسيق مع الجهات الحكومية</span><span lang="en">Government liaison</span></h3><p><span lang="ar">متابعة المعاملات مع الجهات الحكومية، وتمثيل العميل أمامها، وتذليل العقبات التشغيلية.</span><span lang="en">Following up with government authorities, representing clients before them, and clearing operational bottlenecks.</span></p></article>
+    <article><h3><span lang="ar">تصدير القهوة الإثيوبية المختصة</span><span lang="en">Ethiopian specialty coffee export</span></h3><p><span lang="ar">تصدير القهوة المختصة من أشهر مناطق إثيوبيا لعملائنا من المحامص والعلامات في السعودية والكويت وقطر.</span><span lang="en">Exporting specialty coffee from Ethiopia's best-known regions to roasters and brands in Saudi Arabia, Kuwait and Qatar.</span></p><div class="origins"><span>Guji</span><span>Yirgacheffe</span><span>Sidama</span></div></article>
+    <article><h3><span lang="ar">توفير الكوادر التمريضية</span><span lang="en">Nursing staff placement</span></h3><p><span lang="ar">استقطاب ممرضات مؤهلات وإرسالهن إلى مستشفيات ومراكز متخصصة في غسيل الكلى، مع متابعة الإجراءات حتى مباشرة العمل.</span><span lang="en">Recruiting qualified nurses and placing them with hospitals and centers specialized in dialysis, handling the process through to their first day.</span></p></article>
+  </div>
+</div></section>
+
+<section id="work"><div class="in">
+  <div class="head">
+    <div><span class="eyebrow"><span lang="ar">أبرز الأعمال</span><span lang="en">Key engagement</span></span><h2 style="margin-top:8px"><span lang="ar">مشروع زراعي من الصفر</span><span lang="en">An agricultural project from the ground up</span></h2></div>
+    <p><span lang="ar">في عمل استشاري لصالح العميل، تولّت سينرجي تأسيس المشروع وتجهيزه بالكامل.</span><span lang="en">In an advisory engagement on the client's behalf, Synergy set up and equipped the project end to end.</span></p>
+  </div>
+  <div class="case">
+    <div>
+      <div class="client"><i aria-hidden="true"></i><h3>Kuwait Livestock &amp; Agriculture PLC</h3></div>
+      <ul>
+        <li><span lang="ar">تأسيس المشروع واستخراج تراخيصه</span><span lang="en">Establishing the project and securing its licenses</span></li>
+        <li><span lang="ar">تسهيل الحصول على حقوق أراضٍ زراعية تتجاوز 5,000 هكتار</span><span lang="en">Facilitating land rights for more than 5,000 hectares of farmland</span></li>
+        <li><span lang="ar">تنسيق استيراد 80 حاوية 40 قدمًا من المعدات والمواد، إضافة إلى أنظمة الري المحوري</span><span lang="en">Coordinating the import of 80 forty-foot containers of equipment and materials, plus center-pivot irrigation systems</span></li>
+      </ul>
+    </div>
+    <div class="figs">
+      <div class="fig"><b>5,000+</b><span><span lang="ar">هكتار من الأراضي الزراعية</span><span lang="en">hectares of farmland</span></span></div>
+      <div class="fig"><b>80</b><span><span lang="ar">حاوية 40 قدمًا</span><span lang="en">forty-foot containers</span></span></div>
+      <div class="fig"><b>$15M+</b><span><span lang="ar">قيمة المعدات والمواد المستوردة</span><span lang="en">in imported equipment and materials</span></span></div>
+    </div>
+  </div>
+
+  <div class="proj" style="margin-top:48px;grid-template-columns:minmax(0,1fr)">
+    <div><span class="eyebrow"><span lang="ar">تصدير القهوة المختصة</span><span lang="en">Specialty coffee export</span></span>
+    <h3 style="margin-top:8px"><span lang="ar">من مزارع إثيوبيا إلى عملائنا في الخليج</span><span lang="en">From Ethiopian farms to clients across the Gulf</span></h3>
+    <p style="margin-top:6px"><span lang="ar">صدّرنا قهوة مختصة من غوجي ويرغاتشيفي وسيداما لعملاء في السعودية والكويت وقطر، ومن عملائنا علامة «كوز القهوة».</span><span lang="en">We exported specialty coffee from Guji, Yirgacheffe and Sidama to clients in Saudi Arabia, Kuwait and Qatar, including the brand Kooz Al Qahwa.</span></p>
+    <div class="origins" style="margin-top:12px"><span lang="ar">السعودية</span><span lang="ar">الكويت</span><span lang="ar">قطر</span><span lang="en">Saudi Arabia</span><span lang="en">Kuwait</span><span lang="en">Qatar</span></div></div>
+  </div>
+
+  <div class="proj" style="margin-top:20px">
+    <span class="plate"><img src="images/mereja.png" alt="Mereja"></span>
+    <div><h3><span lang="ar">«مرجا» Mereja</span><span lang="en">Mereja</span></h3><p style="margin-top:6px"><span lang="ar">صحيفة إعلانية مجانية في إثيوبيا، أطلقتها سينرجي ضمن أعمالها.</span><span lang="en">A free advertising newspaper in Ethiopia, launched by Synergy.</span></p></div>
+  </div>
+</div></section>
+
+<section id="why"><div class="in">
+  <div class="head">
+    <div><span class="eyebrow"><span lang="ar">لماذا سينرجي</span><span lang="en">Why Synergy</span></span><h2 style="margin-top:8px"><span lang="ar">معًا أقوى</span><span lang="en">Together stronger</span></h2></div>
+  </div>
+  <div class="why">
+    <div><h3><span lang="ar">نتكلم لغتك</span><span lang="en">We speak your language</span></h3><p><span lang="ar">مستشارونا يتحدثون العربية والإنجليزية، فتصل التفاصيل واضحة، ونسمع بعناية، ونقول الحقيقة كما هي.</span><span lang="en">Our consultants work in Arabic and English, so details come through clearly. We listen carefully and speak plainly.</span></p></div>
+    <div><h3><span lang="ar">شبكة جاهزة</span><span lang="en">A ready network</span></h3><p><span lang="ar">علاقات مهنية قائمة مع كفاءات وجهات مؤهلة في المجالات اللي يحتاجها عملاؤنا.</span><span lang="en">Established relationships with qualified people and firms in the fields our clients need.</span></p></div>
+    <div><h3><span lang="ar">مرونة</span><span lang="en">Flexibility</span></h3><p><span lang="ar">نبحث في أسواق متخصصة وفرص غير مزدحمة، ونبني لكل عميل حلًا يناسب طلبه.</span><span lang="en">We research niche markets and untapped opportunities, and shape each solution around the client's request.</span></p></div>
+    <div><h3><span lang="ar">معرفة بالأرض</span><span lang="en">Knowledge on the ground</span></h3><p><span lang="ar">فهمنا لبيئة الأعمال والأنظمة في إثيوبيا يحل اختناقات التشغيل قبل ما تصير مشكلة.</span><span lang="en">Our grasp of Ethiopia's business and regulatory landscape resolves operational bottlenecks before they become problems.</span></p></div>
+    <div><h3><span lang="ar">أثر أكبر</span><span lang="en">The greater good</span></h3><p><span lang="ar">نخدم المستثمرين الأجانب والإثيوبيين في المهجر، ونساهم في ظهور مشاريع جديدة في البلد.</span><span lang="en">We serve foreign and diaspora investors and help new ventures take root in the country.</span></p></div>
+  </div>
+</div></section>
+
+<section id="partners"><div class="in">
+  <div class="head"><div><span class="eyebrow"><span lang="ar">شركاؤنا</span><span lang="en">Partners</span></span></div></div>
+  <div class="partners">
+    <figure><span class="plate"><img src="images/alswylem.png" alt="Alswylem"></span><figcaption><span lang="ar">مؤسسة السويلم التجارية</span><span lang="en">Alswylem Trading</span></figcaption></figure>
+    <figure><span class="plate"><img src="images/etarah.png" alt="Etarah"></span><figcaption><span lang="ar">عطارة</span><span lang="en">Etarah</span></figcaption></figure>
+  </div>
+</div></section>
+
+<section id="voices"><div class="in">
+  <div class="head"><div><span class="eyebrow"><span lang="ar">قالوا عنا</span><span lang="en">Client voices</span></span></div></div>
+  <div class="voices">
+    <blockquote><p><span lang="ar">«أنصح بسينرجي لكل إثيوبي يعيش في الخارج ويبغى يبدأ مشروعه الخاص في إثيوبيا.»</span><span lang="en">“I recommend Synergy to every Ethiopian living abroad who wants to start a company back home.”</span></p><cite>Seid Yassin · <span lang="ar">مصمم</span><span lang="en">Designer</span></cite></blockquote>
+    <blockquote><p><span lang="ar">«المعلومات الآنية عن فرص الأعمال وإجراءاتها في إثيوبيا خلّتنا نتعامل مع المشاكل قبل وقوعها ونخطط صح.»</span><span lang="en">“Real-time information on Ethiopia's business opportunities and procedures let us deal with issues early and plan well.”</span></p><cite>Ahmed Kemal · <span lang="ar">مستورد</span><span lang="en">Importer</span></cite></blockquote>
+  </div>
+</div></section>
+
+<section id="founder"><div class="in founder">
+  <div>
+    <span class="eyebrow"><span lang="ar">المؤسس</span><span lang="en">Founder</span></span>
+    <h3 style="margin-top:8px"><span lang="ar">عبدالله شافي إدريس</span><span lang="en">Abdullah Shafi Idris</span></h3>
+    <p><span lang="ar">مؤسس سينرجي ورئيسها التنفيذي. بدأ مسيرته عام 2002 بين الإعلام والإنتاج والتسويق وتطوير الأعمال، ويعمل اليوم مديرًا للعمليات والتطوير في زاه.</span><span lang="en">Founder &amp; CEO of Synergy. His career began in 2002 across media, production, marketing and business development; today he is Director of Operations &amp; Development at Zah.</span></p>
+  </div>
+  <a class="btn" href="https://shafiz.net" target="_blank" rel="noopener">shafiz.net</a>
+</div></section>
+
+<section class="contact" id="contact"><div class="in">
+  <div class="head">
+    <div><span class="eyebrow"><span lang="ar">تواصل</span><span lang="en">Contact</span></span><h2 style="margin-top:8px"><span lang="ar">خلنا نبدأ مشروعك</span><span lang="en">Let's start your project</span></h2></div>
+    <p><span lang="ar">نقدّم خدماتنا اليوم عن بُعد. إذا عندك مشروع جاد في إثيوبيا، راسلنا بتفاصيله ونرد عليك.</span><span lang="en">Today we work remotely. If you have a serious project in Ethiopia, email us the details and we will get back to you.</span></p>
+  </div>
+  <div class="cgrid">
+    <div><small><span lang="ar">البريد الإلكتروني</span><span lang="en">Email</span></small><span class="mail" dir="ltr">abdullah@shafiz.net</span></div>
+  </div>
+</div></section>
+
+<footer><div class="in"><span>© Synergy Consulting Services · synergyet.net</span><span lang="ar">معًا أقوى</span><span lang="en">Together stronger</span></div></footer>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function set(l){root.lang=l;root.dir=l==="ar"?"rtl":"ltr";try{localStorage.setItem("syn-lang",l)}catch(e){}}
+  var saved=null;try{saved=localStorage.getItem("syn-lang")}catch(e){}
+  set(saved||"ar");
+  document.getElementById("lang").addEventListener("click",function(){set(root.lang==="ar"?"en":"ar")});
+})();
+</script>
+
+</body>
+</html>
